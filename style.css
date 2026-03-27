@@ -923,3 +923,16 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
 
   animation: bounce 1.5s infinite;
 }
+@media (max-width: 768px) {
+  .si-num {
+    font-size: 8vw; /* mobile screen adjust */
+  }
+  .stat-item {
+    padding: 10px 0;
+  }
+}
+.row.text-center {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
