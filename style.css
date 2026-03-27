@@ -995,3 +995,77 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
     font-size: 6vw; /* responsive hero */
   }
 }
+/* NAVBAR */
+.site-nav{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:8px 12px;
+  position:sticky; top:0; z-index:1000;
+}
+
+/* Logo — responsive */
+.nav-logo img {
+  height:60px;      /* mobile-friendly */
+  width:auto;
+  object-fit:contain;
+}
+
+/* Brand slot & badge */
+.nav-brand-slot{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px; /* spacing between logo & badge */
+}
+
+/* Years badge responsive */
+.years-badge{
+  width:50px; height:50px;
+  font-size:0.9rem;
+}
+
+/* Hamburger toggler */
+.nav-toggler{
+  display:block;
+  border:1px solid rgba(200,150,12,.45);
+  background:transparent;
+  border-radius:6px;
+  padding:6px 10px;
+  cursor:pointer;
+}
+.nav-toggler span{
+  display:block;
+  width:25px; height:2px;
+  background:rgba(255,255,255,.85);
+  margin:4px 0;
+}
+
+/* Mobile menu */
+.nav-collapse{
+  display:none;
+  flex-direction:column;
+  background:rgba(30,2,2,.97);
+  padding:10px 0;
+}
+.nav-collapse.open{display:flex;}
+
+/* Small screens adjustments */
+@media(max-width:767px){
+  .nav-brand-slot{
+    flex-direction:row;
+    justify-content:center;
+    gap:8px;
+  }
+  .years-badge{
+    width:45px; height:45px;
+    font-size:0.8rem;
+  }
+  .nav-logo img{
+    height:50px;
+  }
+  .nav-top{
+    padding:6px 10px;
+  }
+}
