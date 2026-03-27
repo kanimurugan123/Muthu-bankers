@@ -72,6 +72,17 @@ body::before{
   margin-right: 115px;
 
 }
+@media(max-width:767px){
+  .vinayagar-hanging {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .vinayagar-hanging img {
+    height: 140px;
+  }
+}
 /* LEFT placeholder — user will add logo manually */
 .nav-logo img{
   height: 200px;
@@ -879,8 +890,21 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
   background: gold;
   border-radius: 10px;
 }
-.bento {
+/* .bento {
   margin-top: 50px;
+} */
+ .bento {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.bento-hero, .bento-tile {
+  flex: 1 1 clamp(180px, 30%, 400px);
+  min-width: 180px;
+}
+@media(max-width:480px){
+  .bento-hero, .bento-tile { flex:1 1 100%; }
 }
 .review-container {
   display: flex;
@@ -931,8 +955,43 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
     padding: 10px 0;
   }
 }
+@media(max-width:767px){
+  .nav-logo img, .nav-brand-slot img {
+    max-height: 90px;
+  }
+}
 .row.text-center {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+/* Stats numbers responsive */
+.si-num {
+  font-size: 3rem; /* laptop default */
+  font-weight: 700;
+  display: block;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  .si-num {
+    font-size: 5vw; /* mobile scale */
+  }
+
+  .stat-item {
+    padding: 10px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* mobile menu vertical */
+    gap: 10px;
+  }
+
+  .nav-links-row {
+    padding: 5px 0;
+  }
+
+  .hero-title {
+    font-size: 6vw; /* responsive hero */
+  }
 }
