@@ -1011,7 +1011,7 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
   }
 
   .navbar-nav {
-    flex-direction: column; /* mobile menu vertical */
+    flex-direction: column; 
     gap: 10px;
   }
 
