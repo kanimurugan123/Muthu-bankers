@@ -1031,3 +1031,84 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
 .section-title p {
   color: #f5e6c0; /* light gold */
 }
+
+
+
+
+
+
+
+/* ✅ MOBILE FIX (SAFE OVERRIDE) */
+@media (max-width: 768px) {
+
+  /* Container padding fix */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* Navbar logo size fix */
+  .nav-logo img {
+    height: 80px !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .nav-brand-slot img {
+    height: 80px !important;
+    width: auto !important;
+  }
+
+  /* Years badge */
+  .years-badge {
+    width: 70px !important;
+    height: 70px !important;
+  }
+
+  /* Hero section text center */
+  #hero {
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Bento tiles full width */
+  .bento-tile,
+  .bento-hero {
+    flex: 1 1 100% !important;
+  }
+
+  /* Carousel height auto (important) */
+  #carouselExample .carousel-inner {
+    height: auto !important;
+  }
+
+  #carouselExample .carousel-item img {
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* Branch cards spacing */
+  .branch-card {
+    margin-bottom: 20px;
+  }
+
+  /* Stats numbers */
+  .si-num {
+    font-size: 6vw !important;
+  }
+
+  /* Heading adjust */
+  .sec-h2 {
+    font-size: 1.5rem !important;
+  }
+
+  /* Review cards */
+  .review-card {
+    width: 100% !important;
+  }
+
+}
