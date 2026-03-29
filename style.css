@@ -152,6 +152,12 @@ body::before{
   color:var(--gold-b)!important;
   background:rgba(200,150,12,.13);
 }
+.navbar-nav {
+  flex-wrap: nowrap;        /* wrap aagadhu */
+
+  white-space: nowrap;      
+}
+
 
 
 /* Hamburger toggler — shown only on tablet/mobile */
@@ -880,10 +886,26 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
   letter-spacing: 1px;
   position: relative;
 }
-#bannerCarousel .carousel-item img {
-  max-width: 500px;   /* change this to whatever small size you want */
-  height: auto;       /* keeps the aspect ratio */
-  margin: 0 auto;     /* center horizontally */
+
+
+
+#carouselExample {
+  width: 100%;
+  max-width: 100%;
+}
+
+#carouselExample .carousel-inner {
+  height: 400px; /* fixed height (you can adjust) */
+}
+
+#carouselExample .carousel-item {
+  height: 100%;
+}
+
+#carouselExample .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* IMPORTANT */
 }
 
 /* 🔥 underline design */
@@ -1000,4 +1022,12 @@ background: linear-gradient(90deg, #ffd700, #fff8dc, #ffcc00);
   .hero-title {
     font-size: 6vw; /* responsive hero */
   }
+}
+.section-title h2 {
+  color: #F0C020; /* gold */
+  font-weight: 700;
+}
+
+.section-title p {
+  color: #f5e6c0; /* light gold */
 }
